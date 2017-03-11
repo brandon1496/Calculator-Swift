@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8070F3E1E6BE4790064EFDE /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8070F3D1E6BE4790064EFDE /* CalculatorBrain.swift */; };
 		B8B98D011E542046001C3D48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B98D001E542046001C3D48 /* AppDelegate.swift */; };
 		B8B98D031E542046001C3D48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B98D021E542046001C3D48 /* ViewController.swift */; };
 		B8B98D061E542046001C3D48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8B98D041E542046001C3D48 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B8070F3D1E6BE4790064EFDE /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		B8B98CFD1E542046001C3D48 /* Calualator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calualator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8B98D001E542046001C3D48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8B98D021E542046001C3D48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8070F3A1E6BE1540064EFDE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8070F3D1E6BE4790064EFDE /* CalculatorBrain.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B8070F3B1E6BE15F0064EFDE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8B98D041E542046001C3D48 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B8070F3C1E6BE16A0064EFDE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8B98D021E542046001C3D48 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		B8B98CF41E542046001C3D48 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +125,10 @@
 		B8B98CFF1E542046001C3D48 /* Calualator */ = {
 			isa = PBXGroup;
 			children = (
+				B8070F3C1E6BE16A0064EFDE /* Controller */,
+				B8070F3B1E6BE15F0064EFDE /* Views */,
+				B8070F3A1E6BE1540064EFDE /* Models */,
 				B8B98D001E542046001C3D48 /* AppDelegate.swift */,
-				B8B98D021E542046001C3D48 /* ViewController.swift */,
-				B8B98D041E542046001C3D48 /* Main.storyboard */,
 				B8B98D0A1E542046001C3D48 /* Assets.xcassets */,
 				B8B98D0C1E542046001C3D48 /* LaunchScreen.storyboard */,
 				B8B98D0F1E542046001C3D48 /* Info.plist */,
@@ -264,6 +291,7 @@
 			files = (
 				B8B98D031E542046001C3D48 /* ViewController.swift in Sources */,
 				B8B98D011E542046001C3D48 /* AppDelegate.swift in Sources */,
+				B8070F3E1E6BE4790064EFDE /* CalculatorBrain.swift in Sources */,
 				B8B98D091E542046001C3D48 /* Calualator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +537,7 @@
 				B8B98D2A1E542047001C3D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8B98D2B1E542047001C3D48 /* Build configuration list for PBXNativeTarget "CalualatorTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +546,7 @@
 				B8B98D2D1E542047001C3D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8B98D2E1E542047001C3D48 /* Build configuration list for PBXNativeTarget "CalualatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +555,7 @@
 				B8B98D301E542047001C3D48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
