@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+// class that handles the data
 class CalculatorBrain {
      var _first_Number: Double?
      var _second_Number: Double?
@@ -16,13 +16,14 @@ class CalculatorBrain {
      var _output: Double?
   
     
-    
+    // handles all the math functions and returns the output 
     func opperation() -> String
     {
         
         var output = String()
        
-        switch self._opperator!  {
+        switch self._opperator!
+        {
             case "+":
             output = String(self._first_Number! + self._second_Number!)
             break
@@ -38,25 +39,30 @@ class CalculatorBrain {
         default:
             break
             
-                }
+        }
+        self._output = Double(output)!
         return output
     }
-    
-    func changing_sign(sign: String) -> String {
+    // it gets the string number of the current number which then it swithes the sign
+    func changing_sign(sign: String) -> String
+    {
+
         var number = Double(sign)
         if number! <= 0.0
         {
           number! = abs(number!)
           return String(number!)
         }
-        else{
+        else
+        {
             var new_number = 0.0 - number!
             return String(new_number)
         }
     }
-    
-        func percentage(number : Double) -> String{
-            var new_number = String(sqrt(number))
+        // Gets the square root
+        func percentage(number : Double) -> String
+        {
+            var new_number = String(sqrt(abs(number)))
             return new_number
         }
     
